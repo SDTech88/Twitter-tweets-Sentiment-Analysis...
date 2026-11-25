@@ -26,7 +26,7 @@ if st.button('Predict Sentiment') and tweet.strip():
     # and pull the col index of the max value (axis(1) is for col and 0 is for row) and provide teh result in 1d array hence
     # at teh end of the code you have to mention [0] to pull that only single digit from 1d array into proper single int. 
     
-    sentiment_map = {0:'Negetive', 1:'Neutral', 2:'Positive'} # this is simple dict
+    sentiment_map = {0:'Negative', 1:'Neutral', 2:'Positive'} # this is simple dict
     
     st.write("Sentiment", sentiment_map[predicted_class]) # this will take the index number from above predicted_class and 
     # pulls out it value as per its given key from above dict. 
